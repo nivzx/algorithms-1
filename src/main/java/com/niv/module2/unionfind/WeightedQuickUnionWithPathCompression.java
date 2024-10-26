@@ -15,7 +15,7 @@ public class WeightedQuickUnionWithPathCompression {
 
     private int root(int p) {
         while (idArray[p] != p) {
-            idArray[p] = idArray[idArray[p]]; // path compressoin
+            idArray[p] = idArray[idArray[p]]; // path compression
             p = idArray[p];
         }
         return p;
